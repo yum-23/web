@@ -1,0 +1,244 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+dialog{
+    position: relative;
+    background-color: #eee;
+    border: none;
+    width: 300px;
+    height: 100px;
+
+    p{
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    button{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.logo {
+    font-size: 32px;
+    font-family: 'Bagel Fat One';
+
+    a {
+        text-decoration: none;
+        color: #333;
+    }
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+#product-detail {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.product-container {
+    display: flex;
+    max-width: 900px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image img {
+    width: 400px;
+}
+
+.product-info {
+    margin-left: 40px;
+    max-width: 400px;
+}
+
+.product-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.brand {
+    font-size: 14px;
+    color: #777;
+}
+
+.price {
+    font-size: 24px;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.des {
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.option-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 200px;
+    font-family: Arial, sans-serif;
+}
+
+.option-wrapper label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.option-wrapper select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 4px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+
+    i {
+        color: rgb(238, 55, 55);
+        font-size: 30px;
+        border: none;
+        display: inline-block;
+        background-color: transparent;
+        
+    }
+}
+
+.order-btn {
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    background-color: gray;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.order-btn:hover {
+    background-color: #0056b3;
+}
+
+.wishlist-btn {
+    cursor: pointer;
+    border: none;
+    color: #007BFF;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.wishlist-btn:hover {
+    background: #007BFF;
+    color: white;
+}
+
+#product-des {
+    background-color: #fff;
+    padding: 60px 20px;
+    border-top: 1px solid #eee;
+}
+
+.des-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.des-container img {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px 0;
+}
+
+.des-container h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #4E342E;
+}
+
+.des-container p {
+    font-size: 15px;
+    color: #777;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .all-pd,
+    .order {
+        display: none;
+    }
+
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .product-info {
+        width: 100%;
+        text-align: start;
+
+        p {
+            margin: 4px 0;
+        }
+    }
+
+    .option-wrapper {
+        display: flex;
+        align-items: start;
+    }
+
+    .buttons button {
+        width: 70%;
+    }
+
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도그라이프</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Black+And+White+Picture&family=Jua&family=Noto+Sans+KR:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/강아지파비콘.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <span class="fa-solid fa-bars" id="menu-button"></span>
+
+        <nav id="mobile-menu">
+            <ul>
+                <li><a href="#home">홈</a></li>
+                <li><a href="#products">제품</a></li>
+                <li><a href="#about">회사소개</a></li>
+                <li><a href="#contact">연락처</a></li>
+            </ul>
+        </nav>
+
+        <div class="logo">도그라이프</div>
+
+        <div class="search-bar">
+            <input type="search" placeholder="search">
+            <button type="submit">검색</button>
+        </div>
+
+        <span class="login-container">
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+        </span>
+    </header>
+
+    <section id="home">
+        <div class="banner">
+            <h1>도그라이프에 오신 것을 환영합니다!</h1>
+            <p>우리의 사랑스러운 강아지를 위한 최고의 제품을 찾아보세요.</p>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>추천 제품</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="images/강아지하네스상품.jpg" alt="강아지하네스">
+                <h3>강아지 하네스</h3>
+                <p>가격: 15,000원</p>
+                <a href="detail.html">구매</a>
+                <a href="#">담기</a>
+                <a href="#"><i class="fa-solid fa-heart-circle-plus"></i></a>
+            </div>
+            <div class="product">
+                <img src="images/노즈워크.jpg" alt="노즈워크">
+                <h3>노즈워크</h3>
+                <p>가격: 8,000원</p>
+                <a href="#">구매</a>
+                <a href="#">담기</a>
+                <a href="#"><i class="fa-solid fa-heart-circle-plus"></i></a>
+            </div>
+            <div class="product">
+                <img src="images/눈영양제.jpg" alt="눈 영양제">
+                <h3>눈 영양제</h3>
+                <p>가격: 25,000원</p>
+                <a href="#">구매</a>
+                <a href="#">담기</a>
+                <a href="#"><i class="fa-solid fa-heart-circle-plus"></i></a>
+            </div>
+            <div class="product">
+                <img src="images/딸기간식.jpg" alt="딸기간식">
+                <h3>말랑 딸기맛 </h3>
+                <p>가격: 17,000원</p>
+                <a href="#">구매</a>
+                <a href="#">담기</a>
+                <a href="#"><i class="fa-solid fa-heart-circle-plus"></i></a>
+            </div>
+            <div class="product">
+                <img src="images/치석껌.jpg" alt="치석껌">
+                <h3>덴탈껌</h3>
+                <p>가격: 35,000원</p>
+                <a href="#">구매</a>
+                <a href="#">담기</a>
+                <a href="#"><i class="fa-solid fa-heart-circle-plus"></i></a>
+            </div>
+            <div class="product">
+                <img src="images/강아지옷.jpg" alt="강아지 옷">
+                <h3>메쉬 쿨 여름 나시</h3>
+                <p>가격: 14,000원</p>
+                <a href="#">구매</a>
+                <a href="#">담기</a>
+                <a href="#"><i class="fa-solid fa-heart-circle-plus"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <form action="#" class="dog-container">
+        <h2 class="dog-title">강아지 정보</h2>
+
+        <fieldset>
+            <legend class="sr-only">강아지 정보</legend>
+
+            <div class="dog-info">
+                <div class="form-row">
+                    <label for="dog-age">생년월일</label>
+                    <input type="date" id="dog-age">
+                </div>
+
+                <div class="form-row">
+                    <label for="dog-type">견종</label>
+                    <input type="text" id="dog-type" placeholder="직접입력">
+                </div>
+
+                <div class="form-row">
+                    <label for="dog-disease">질병</label>
+                    <input type="text" id="dog-disease" placeholder="직접입력">
+                </div>
+
+                <div class="form-row">
+                    <label for="dog-allergy">알러지</label>
+                    <input type="text" id="dog-allergy" placeholder="직접입력">
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button type="submit">저장</button>
+            </div>
+        </fieldset>
+        </div>
+    </form>
+
+    <section id="about">
+        <div class="about-container">
+            <img src="images/강아지2.png" alt="강아지와 함께하는 회사" class="about-img">
+            <div class="about-text">
+                <h2>Dog Life</h2>
+                <p>
+                    도그라이프는 <strong>반려견과 함께하는 삶을 더욱 편리하고 즐겁게</strong> 만들기 위해 노력합니다.
+                    <br><br>
+                    최고 품질의 제품과 <span style="color: #ff6600; font-weight: bold;">100% 고객 만족</span>을 목표로,
+                    반려견과 보호자를 위한 <strong>안전하고 혁신적인 제품</strong>을 제공합니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <h2>연락처</h2>
+        <p>주소: 광주광역시 광산구</p>
+        <p>전화: 123-456-7890</p>
+        <p>이메일: info@dogshop.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 강아지 용품 쇼핑몰. All rights reserved.</p>
+    </footer>
+
+
+    <script>
+        const menuBtn = document.querySelector("#menu-button");
+        const mobileMenu = document.querySelector("#mobile-menu");
+
+        menuBtn.addEventListener("click", function () {
+            if (mobileMenu.style.display === "block") {
+                mobileMenu.style.display = "none";
+            } else {
+                mobileMenu.style.display = "block";
+            }
+        });
+    </script>
+
+</body>
+
+
+
+</html>

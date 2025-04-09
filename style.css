@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fa-bars {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+    position: relative;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+}
+
+header nav ul li a:hover {
+    color: #007BFF;
+}
+
+header div {
+    font-family: 'Bagel Fat One';
+    font-size: 32px;
+}
+
+header span a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 10px;
+}
+
+header span a:hover {
+    color: #007bff;
+}
+
+#home .banner {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background-image: url('images/메인강아지사진.png');
+    background-position: center;
+    background-size: cover;
+}
+
+#home .banner h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#home .banner p {
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.search-bar {
+    display: flex;
+    gap: 0px;
+
+    button {
+        cursor: pointer;
+        background-color: #a8a1a1;
+        padding: 6px;
+        border: none;
+    }
+
+    input {
+        background-color: #eee;
+        padding: 7px;
+        border: none;
+    }
+}
+
+#products {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+#products h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition-duration: 0.3s;
+
+    i{
+        color: rgb(238, 55, 55);
+        font-size: 20px;
+    }
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.product a {
+    display: inline-block;
+    background-color: gray;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.product a:hover {
+    background-color: #0056b3;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.sr-only {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+
+.dog-container {
+    max-width: 900px;
+    margin: auto;
+
+    h2 {
+        text-align: center;
+        font-size: 32px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+fieldset {
+    width: 900px;
+    height: auto;
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #ddd;
+
+    .dog-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-row input {
+        font-size: 1rem;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        width: 100%;
+
+    }
+
+    .button-container button {
+        width: 150px;
+        height: 50px;
+        margin-top: 20px;
+        background-color: #ff6600;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .button-container button:hover {
+        background-color: #e65c00;
+    }
+
+
+    div {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 10px;
+
+        label {
+            font-size: 25px;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        input {
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 10px;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.about-img {
+    width: 50%;
+    /* 창크기 넓혀도 강아지 커지지 않게  */
+    max-width: 400px;
+}
+
+.about-text {
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    color: #666;
+}
+
+#contact {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+#contact h2 {
+    font-size: 27px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .fa-bars {
+        display: block;
+    }
+
+    #menu-button {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    #mobile-menu {
+        display: none;
+        width: 100%;
+    }
+
+    #mobile-menu ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .search-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .login-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    fieldset {
+        width: 100%;
+    }
+}

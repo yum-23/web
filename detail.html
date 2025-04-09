@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품 상세 - 도그라이프</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Black+And+White+Picture&family=Jua&family=Noto+Sans+KR:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <dialog>
+        <p>장바구니에 담겼습니다! </p>
+        <button type="button" class="close-btn">X</button>
+    </dialog>
+
+    <header>
+        <div class="logo"> 도그라이프 </div>
+        <nav>
+            <ul>
+                <li class="home"><a href="#">홈</a></li>
+                <li class="all-pd"><a href="#">전체 상품</a></li>
+                <li class="order"><a href="#">주문하기</a></li>
+                <li class="cart"><a href="#">장바구니</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="product-detail">
+        <div class="product-container">
+            <div class="product-image">
+                <img src="images/강아지하네스상품.jpg" alt=" 하네스상품">
+            </div>
+            <div class="product-info">
+                <h2>강아지 하네스</h2>
+                <p class="brand">브랜드: 도그라이프</p>
+                <p class="price"><strong>₩15,000</strong></p>
+                <p class="des">관절에 무리없이 편안하고 안전한 산책을 위한 필수 아이템!</p>
+
+                <div class="option-wrapper">
+                    <label for="quantity">수량 :</label>
+                    <select id="quantity">
+                        <option value="1">1개</option>
+                        <option value="2">2개</option>
+                        <option value="3">3개</option>
+                        <option value="4">4개</option>
+                        <option value="5">5개</option>
+                        <option value="6">6개</option>
+                        <option value="7">7개</option>
+                        <option value="8">8개</option>
+                        <option value="9">9개</option>
+                        <option value="10">10개</option>
+                    </select>
+
+                    <label for="size">사이즈 :</label>
+                    <select id="size">
+                        <option value="1">S</option>
+                        <option value="2">M</option>
+                        <option value="3">L</option>
+                        <option value="4">XL</option>
+                    </select>
+                </div>
+
+                <div class="buttons">
+                    <a href="#"><i class="fa-solid fa-heart-circle-plus"></i></a>
+                    <button class="wishlist-btn" id="cartButton">🛒장바구니 담기</button>
+                    <button class="order-btn">💳구매하기</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="product-des">
+        <div class="des-container">
+            <h2>상세 설명</h2>
+            <img src="images/4428225971796388_374769502 (1).jpg" alt="">
+            <img src="images/사이즈.jpg" alt="">
+            <p>※ 하네스 착용 시 털이 끼지 않도록 사이즈를 여유 있게 선택해 주세요.</p>
+        </div>
+    </section>
+
+    <script>
+        document.querySelector('#cartButton').addEventListener('click', function(){
+            document.querySelector('dialog').showModal();
+        })
+
+        document.querySelector('.close-btn').addEventListener('click', function(){
+            document.querySelector('dialog').close();
+        })
+    </script>
+
+</body>
+
+</html>
