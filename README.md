@@ -1,3 +1,3 @@
 # web
 
-[doglife](yum-23/yum-23.github.io)
+[doglife](yum-23.github.io/web/)
