@@ -213,10 +213,25 @@ fieldset {
     .dog-info {
         display: flex;
         flex-direction: column;
+        gap: 10px;
     }
 
+    .form-row {
+        display: flex;
+    }
+    
+    .form-row label {
+        width: 100px;
+        font-weight: bold;
+        text-align: left;
+    }
+    
     .form-row input {
+        width: 200px;
+        padding: 8px;
         font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
     }
 
     .button-container {
