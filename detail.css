@@ -12,6 +12,7 @@ dialog{
     border: none;
     width: 300px;
     height: 100px;
+    
 
     p{
         text-align: center;
@@ -146,6 +147,10 @@ nav ul li a:hover {
         background-color: transparent;
         
     }
+
+    i:hover{
+        color:rgb(214, 19, 19) ;
+    }
 }
 
 .order-btn {
@@ -241,4 +246,7 @@ nav ul li a:hover {
         width: 70%;
     }
 
+    dialog{
+        top: 500px;
+    }
 }
